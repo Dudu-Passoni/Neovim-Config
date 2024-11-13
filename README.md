@@ -1,13 +1,16 @@
 # Neovim-Config
-Configuration with plugins to make neovim better.
+Configuration with plugins to make neovim better than every modern text editor available.
+
+## Environment
+![Setup](https://go-skill-icons.vercel.app/api/icons?i=linux,arch,kitty,neovim,lua,telescope)
 
 ##
-Vim Cheat Sheet\
+# Vim Cheat Sheet
 https://github.com/rtorr/vim-cheat-sheet
 
-# Movement
+## Movement
 
-## Cursor movement
+### Cursor movement
 
 ```h``` - move cursor left\
 ```j``` - move cursor down\
@@ -38,7 +41,7 @@ https://github.com/rtorr/vim-cheat-sheet
 ```}``` - jump to next paragraph (or function/block, when editing code)\
 ```{``` - jump to previous paragraph (or function/block, when editing code) 
 
-## Screen movement
+### Screen movement
 
 ```H``` - move to top of screen\
 ```M``` - move to middle of screen\
@@ -53,7 +56,7 @@ https://github.com/rtorr/vim-cheat-sheet
 ```Ctrl + d``` - move cursor and screen down 1/2 page\
 ```Ctrl + u``` - move cursor and screen up 1/2 page 
 
-# Insert Mode
+## Insert Mode
 
 ```i``` - insert before the cursor\
 ```I``` - insert at the beginning of the line
@@ -68,7 +71,7 @@ https://github.com/rtorr/vim-cheat-sheet
 
 ```Esc``` - Exit insert mode
 
-# Editing
+## Editing
 
 ```r``` - replace a single character.\
 ```R``` - replace more than one character, until ESC is pressed. 
@@ -85,7 +88,7 @@ https://github.com/rtorr/vim-cheat-sheet
 
 ```Ctrl + r``` - redo
 
-# Marking text (visual mode)
+## Marking text (visual mode)
 
 ```v``` - start visual mode, mark lines, then do a command (like y-yank)\
 ```V``` - start linewise visual mode \
@@ -103,7 +106,7 @@ https://github.com/rtorr/vim-cheat-sheet
 ```o``` - move to other end of marked area\
 ```O``` - move to other corner of block 
 
-## Visual commands
+### Visual commands
 
 ```>``` - shift text right   \
 ```<``` - shift text left
@@ -117,7 +120,7 @@ https://github.com/rtorr/vim-cheat-sheet
 ```u``` - change marked text to lowercase\
 ```U``` - change marked text to uppercase
 
-# Cut and paste
+## Cut and paste
 
 ```yy``` - yank (copy) a line\
 ```2yy``` - yank (copy) 2 lines \
@@ -138,20 +141,20 @@ https://github.com/rtorr/vim-cheat-sheet
 
 ```x``` - delete (cut) character 
 
-# Indent text
+## Indent text
 
 ```>>``` - indent (move right) line one shiftwidth\
 ```<<``` - de-indent (move left) line one shiftwidth
 
 ```3==``` - re-indent 3 lines 
 
-# Exiting
+## Exiting
 
 ```:w``` - write (save) the file, but don't exit\ 
 ```:q``` - quit (fails if there are unsaved changes) \
 ```:wq or :x or ZZ``` - write (save) and quit 
 
-# Search and replace
+## Search and replace
 
 ```/pattern``` - search for pattern\
 ```?pattern``` - search backward for pattern 
@@ -163,7 +166,7 @@ https://github.com/rtorr/vim-cheat-sheet
 
 ```:%s/old/new/g``` - replace all old with new throughout file 
 
-# Tabs
+## Tabs
 
 ```:tabnew or :tabnew {page.words.file}``` - open a file in a new tab \
 ```Ctrl + wT``` - move the current split window into its own tab
@@ -177,9 +180,9 @@ https://github.com/rtorr/vim-cheat-sheet
 ```:tabo[nly]``` - close all tabs except for the current one\
 ```:tabdo command``` - run the command on all tabs (e.g. :tabdo q - closes all opened tabs) 
 
-# Working with multiple files
+## Working with multiple files
 
-## Buffers
+### Buffers
 
 ```:e[dit]``` file - edit a file in a new buffer\
 ```:bn[ext]``` - go to the next buffer\
@@ -193,7 +196,7 @@ https://github.com/rtorr/vim-cheat-sheet
 ```:vert[ical] ba[ll]``` - edit all buffers as vertical windows\
 ```:tab ba[ll]``` - edit all buffers as tabs 
 
-## Windows
+### Windows
 
 ```Ctrl + ws``` - split window\
 ```Ctrl + wv``` - split window vertically\
@@ -210,14 +213,14 @@ https://github.com/rtorr/vim-cheat-sheet
 ```Ctrl + wJ``` - make current window full width at the very bottom (bottommost horizontal window)\
 ```Ctrl + wK``` - make current window full width at the very top (topmost horizontal window) 
 
-# Macros
+## Macros
 
 ```qa``` - record macro a\
 ```q``` - stop recording macro\
 ```@a``` - run macro a\
 ```@@``` - rerun last run macro
 
-# Marks
+## Marks
 
 ```:marks``` - list of marks\
 ```ma``` - set current position for mark A 
