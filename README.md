@@ -4,6 +4,17 @@ Configuration with plugins to make neovim better than every modern text editor a
 ## Environment
 ![Setup](https://go-skill-icons.vercel.app/api/icons?i=linux,arch,kitty,neovim,lua,telescope)
 
+
+## Install
+
+```
+mkdir ~/.config/nvim
+git clone https://github.com/Dudu-Passoni/Neovim-Config.git
+cd Neovim-Config
+mv -t ~/.config/nvim/ init.lua lazy-lock.json lua/
+nvim
+```
+
 ##
 # Vim Cheat Sheet
 https://github.com/rtorr/vim-cheat-sheet
