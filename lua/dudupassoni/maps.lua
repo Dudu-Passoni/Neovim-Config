@@ -14,3 +14,8 @@ vim.keymap.set("n", "<leader>t", "<CMD>Neotree<CR>")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Mover seleção para baixo" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Mover seleção para cima" })
+
+-- Mapear <Space>y para +y
+--
+vim.keymap.set('n', '<Space>y', '"+y', { noremap = true, silent = true })
+vim.keymap.set('v', '<Space>y', '"+y', { noremap = true, silent = true })
